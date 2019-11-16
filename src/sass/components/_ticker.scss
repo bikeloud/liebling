@@ -1,5 +1,6 @@
-* { box-sizing: border-box; }
 $duration: 30s;
+$height: 40px;
+$color: #8856a7;
 
 @-webkit-keyframes ticker {
   0% {
@@ -28,41 +29,41 @@ $duration: 30s;
 }
 
 .ticker-wrap {
-  
+
   position: fixed;
   top: 0;
   width: 100%;
   overflow: hidden;
-  height: 4rem;
-  background-color: rgba(#000, 0.9); 
+  height: $height;
+  background-color: rgba($color, 0.9);
   padding-left: 100%;
   box-sizing: content-box;
 
   .ticker {
 
     display: inline-block;
-    height: 4rem;
-    line-height: 4rem;  
+    height: $height;
+    line-height: $height;
     white-space: nowrap;
     padding-right: 100%;
     box-sizing: content-box;
 
-    -webkit-animation-iteration-count: infinite; 
+    -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
    -webkit-animation-name: ticker;
            animation-name: ticker;
-    -webkit-animation-duration: $duration;
+    -webkit-animation-duration: 30s;
             animation-duration: $duration;
 
     &__item {
 
       display: inline-block;
 
-      padding: 0 2rem;
-      font-size: 2rem;
-      color: white;   
+      padding: 0 ($height / 2);
+      font-size: ($height / 2);
+      color: white;
 
     }
 
