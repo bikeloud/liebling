@@ -1,6 +1,6 @@
 $duration: 30s;
 $height: 40px;
-$color: #8856a7;
+$color: #f54242;
 
 @-webkit-keyframes ticker {
   0% {
@@ -30,7 +30,7 @@ $color: #8856a7;
 
 .ticker-wrap {
 
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   overflow: hidden;
