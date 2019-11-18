@@ -46,9 +46,12 @@
   <body class="{{body_class}}">
     {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
     {{{body}}}
+    {{!-- {{ticker with upcoming events at top of body}} --}}
+    {{> ticker}}
 
     {{!-- Search form --}}
     {{> search}}
+
 
     {{!-- The footer --}}
     {{> footer}}

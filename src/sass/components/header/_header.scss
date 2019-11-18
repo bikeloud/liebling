@@ -1,12 +1,12 @@
 .m-header {
   position: fixed;
-  top: 0;
+  top: 40px;
   left: 0;
   width: 100%;
   z-index: 4;
   background-color: var(--background-color);
   will-change: transform;
-  @include transition(transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1));
+  @include transition(transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1));
 
   @include respond-to('medium') {
     padding: 20px 0;
@@ -22,7 +22,7 @@
   }
 
   &.headroom--unpinned {
-    @include transform(translateY(-100%));
+    @include transform(translateY(-200%));
   }
 
   &.submenu-is-active {
